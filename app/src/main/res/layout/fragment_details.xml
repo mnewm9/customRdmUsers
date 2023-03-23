@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:text="@string/close"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ShapeAppearanceOverlay.Material3.Button"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/close"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/large"
+            android:layout_width="401dp"
+            android:layout_height="163dp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:linksClickable="true"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/person_info_layout"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_map" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_blue"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:autoLink="all"
+                tools:text="@string/username"
+                android:linksClickable="true"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contact_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:text="@string/contact_info"
+            android:textStyle="bold"
+            android:linksClickable="true" />
+
+        <LinearLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_phone" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_blue"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:autoLink="all"
+                tools:text="@string/phone"
+                android:linksClickable="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cell_layout"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_phone" />
+            <TextView
+                android:id="@+id/cell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_blue"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:autoLink="all"
+                tools:text="@string/cell"
+                android:linksClickable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email_layout"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_email" />
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_blue"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:autoLink="all"
+                tools:text="@string/email"
+                android:linksClickable="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout></ScrollView>

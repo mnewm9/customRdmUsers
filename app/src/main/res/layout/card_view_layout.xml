@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/clTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_email"
+            android:layout_margin="10dp"
+            android:id="@+id/thumbnail"
+            android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignRight="@id/thumbnail"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/app_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:minLines="2"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false"/>
+            <TextView
+                android:id="@+id/locationPLH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/fullname"
+                android:minLines="2"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="6dp"
+                android:layout_alignRight="@id/thumbnail"
+                android:layout_marginBottom="20dp"
+                android:text="@string/app_name"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                />
+
+
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>
